@@ -1,7 +1,7 @@
 export const zuck = {
   id: 1,
   username: 'marquinhos',
-  name: 'Mark Zuckerberg',
-  email: 'face@zuck.com',
+  name: 'Marquinhos Zuquerberg',
+  email: 'dono@doface.com',
   permissions: {ADMIN: true}
 }

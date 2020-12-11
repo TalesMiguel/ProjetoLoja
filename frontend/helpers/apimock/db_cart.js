@@ -12,7 +12,7 @@ export const cart = {
     }
   },
   methods: {
-    removerProduto (p) {
+    remove_from_cart (p) {
       this.cart = this.cart = this.cart.filter(i => i.nome !== p.nome)
     },
     totalItem (p) {

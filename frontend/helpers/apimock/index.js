@@ -4,8 +4,8 @@ import { cart } from './db_cart'
 import { mockasync } from './mockutils'
 // tem que adicionar a função de add ao carrinho, talvez não aqui, mas no index.js do /api sim!
 
-const keepLoggedIn = true;
-var logged_user = null;
+const keepLoggedIn = true
+// var logged_user = null
 
 export default {
   login (username, password) {
@@ -42,5 +42,5 @@ export default {
   },
   remove_from_cart (removeitem) {
     return mockasync({description: removeitem})
-  },
+  }
 }

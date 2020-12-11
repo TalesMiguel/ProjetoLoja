@@ -1,0 +1,32 @@
+[
+  {
+    "id": "brohmo",
+    "nome": "Cerveja Brohmo lata",
+    "preco": 2.50,
+    "img":""
+  },
+  {
+    "id": "scol",
+    "nome": "Cerveja Scol lata",
+    "preco": 2.50,
+    "img":""
+  },
+  {
+    "id": "amaisbarata",
+    "nome": "A mais Barata",
+    "preco": 2.50,
+    "img":""
+  },
+  {
+    "id": "leite",
+    "nome": "Não aguenta, bebe",
+    "preco": 4,
+    "img":""
+  },
+  {
+    "id": "boazinha",
+    "nome": "Cachaça Boazinha 1L",
+    "preco": 50,
+    "img":""
+  }
+]

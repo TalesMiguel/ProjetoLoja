@@ -1,9 +1,9 @@
 export const cart = {
   data: {
     cart: [
-      { nome: 'Cerveja Scol', preco: 2.50, quantidade: 12 },
-      { nome: 'Ajax', preco: 2.50, quantidade: 8 },
-      { nome: 'Cachaça Boazinha 1L', preco: 50, quantidade: 1 }
+      { id: 'scol', preco: 2.50, quantidade: 12 },
+      { id: 'brohmo', preco: 2.50, quantidade: 8 },
+      { id: 'boazinha', preco: 50, quantidade: 1 }
     ]
   },
   computed: {

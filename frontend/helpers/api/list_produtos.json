@@ -3,30 +3,35 @@
     "id": "brohmo",
     "nome": "Cerveja Brohmo lata",
     "preco": 2.50,
-    "img":""
+    "img":"",
+    "descricao": "A número 0."
   },
   {
     "id": "scol",
     "nome": "Cerveja Scol lata",
     "preco": 2.50,
-    "img":""
+    "img":"",
+    "descricao": "Scolzinha gelada, desce fazendo drift."
   },
   {
     "id": "amaisbarata",
     "nome": "A mais Barata",
-    "preco": 2.50,
-    "img":""
+    "preco": 2.00,
+    "img":"",
+    "descricao": "Churrasco com os amigos? Melhor levar A mais barata."
   },
   {
     "id": "leite",
-    "nome": "Não aguenta, bebe",
+    "nome": "Leite",
     "preco": 4,
-    "img":""
+    "img":"",
+    "descricao": "Não aguenta? Beba leite!"
   },
   {
     "id": "boazinha",
     "nome": "Cachaça Boazinha 1L",
     "preco": 50,
-    "img":""
+    "img":"",
+    "descricao": "Evento especial? Leva uma Boazinha!"
   }
 ]

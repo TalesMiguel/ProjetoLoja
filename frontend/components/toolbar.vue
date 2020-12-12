@@ -1,8 +1,28 @@
 <template>
   <v-app-bar color="blue-grey" dark fixed app clipped-right>
     <v-app-bar-nav-icon @click.stop="state.drawer = !state.drawer" />
-    <v-toolbar-title>Toolbar</v-toolbar-title>
+    <v-toolbar-title>Menu</v-toolbar-title>
     <v-spacer />
+
+    <v-toolbar-item>
+      <v-btn flat color="default" to="/cardapio">
+        Produtos
+      </v-btn>
+      <v-btn flat color="default" to="/carrinho">
+        <v-badge left color="green">
+          <span slot="badge">3</span>
+          <v-icon>shopping_cart</v-icon>
+          Meu carrinho
+        </v-badge>
+      </v-btn>
+      <v-btn flat color="default" to="/cesta">
+        <v-badge left color="green">
+          <span slot="badge">3</span>
+          <v-icon>shopping_cart</v-icon>
+          Minha cesta
+        </v-badge>
+      </v-btn>
+    </v-toolbar-item>
     <v-btn v-if="!logged_user" text dark ripple class="ma-0 ml-5" @click="open_login_dialog($event)">Login</v-btn>
 
     <!-- <template v-slot:activator="{ on }"><v-btn v-on="on"> -->
@@ -47,6 +67,7 @@
 import loginDialog from '~/components/login-dialog.vue'
 import Snacks from '~/helpers/Snacks.js'
 import api from '~api'
+import 'material-design-icons-iconfont/dist/material-design-icons.css'
 
 export default {
   components: {

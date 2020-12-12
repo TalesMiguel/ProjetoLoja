@@ -1,4 +1,5 @@
 import {get, post} from './ajaxutils'
+import 'material-design-icons-iconfont/dist/material-design-icons.css'
 
 export default {
   login (username, password) {

@@ -5,6 +5,7 @@ import Todos from '~/pages/todos.vue'
 import Cardapio from '~/pages/cardapio.vue'
 import Carrinho from '~/pages/carrinho.vue'
 import Cesta from '~/components/cesta.vue'
+import Cesta2 from '~/components/cesta_2.vue'
 
 Vue.use(Router)
 
@@ -15,7 +16,8 @@ export const routerOptions = {
     {path: '/todos', component: Todos, name: 'todos'},
     {path: '/carrinho', component: Carrinho, name: 'carrinho'},
     {path: '/cardapio', component: Cardapio, name: 'cardapio'},
-    {path: '/cesta', component: Cesta, name: 'cesta'}
+    {path: '/cesta', component: Cesta, name: 'cesta'},
+    {path: '/cesta2', component: Cesta2, name: 'cesta2'}
   ]
 }
 

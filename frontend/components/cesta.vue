@@ -6,7 +6,13 @@
       <template v-for="(produto, index) in produtos">
         <v-list-tile-action>
           <v-btn icon ripple>
-            <v-icon color="red lighten-1">delete</v-icon>
+            <v-icon color="error" v-on:click="produto.quantidade--">mdi-cart-minus</v-icon>
+          </v-btn>
+          <v-btn icon ripple>
+            <v-icon color="success" v-on:click="produto.quantidade++">mdi-cart-plus</v-icon>
+          </v-btn>
+          <v-btn icon ripple>
+            <v-icon color="red lighten-1" v-on:click="produto.quantidade=0">delete</v-icon>
           </v-btn>
         </v-list-tile-action>
         <v-list-tile :key="produto.id" avatar>
@@ -18,22 +24,23 @@
           <!-- OBS: A IMAGEM NÃO TA INDO! -->
 
           <v-list-tile>
-            Valor: {{produto.preco * produto.quantidade}}R$
+            Valor: R${{produto.preco * produto.quantidade}}
           </v-list-tile>
 
           <v-list-tile-content>
-            <v-list-tile>
-              Preço unitário: {{produto.preco}}R$
-            </v-list-tile>
-            <v-list-tile-title v-html="produto.nome" />
-            <v-list-tile-sub-title v-html="produto.descricao" /></v-list-tile-sub-title>
+            <v-list-item three-line>
+              <v-list-item-content>
+                <v-list-item-title>{{produto.nome}}</v-list-item-title>
+                <v-list-item-subtitle>{{produto.descricao}}</v-list-item-subtitle>
+                <v-list-item-subtitle>Preço unitário: R${{produto.preco}}</v-list-item-subtitle>
+              </v-list-item-content>
+            </v-list-item>
           </v-list-tile-content>
         </v-list-tile>
 
         <v-list-tile-action>
           <v-text-field label="Quantidade" reverse :value="produto.quantidade" />
         </v-list-tile-action>
-
         <v-divider v-if="index + 1 < produto.lenght" :key="index" />
       </template>
     </v-list>
@@ -86,7 +93,8 @@ export default {
       img: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.imigrantesbebidas.com.br%2Fcerveja-skol-pilsen-lata-350ml&psig=AOvVaw2CZDVWLCJ-1IaYXIUYWh30&ust=1607807508601000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCICeyP3rxu0CFQAAAAAdAAAAABAK',
       descricao: 'Evento especial? Leva uma Boazinha!',
       quantidade: 1
-    }]
+    }],
+    count: 0
   })
 }
 </script>

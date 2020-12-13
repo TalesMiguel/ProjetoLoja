@@ -16,13 +16,21 @@
               </v-img>
 
               <v-cart-text class="pt-4">
-                <v-btn absolute color="green" class="white--text" fab medium right top>
+                <!-- <v-btn absolute color="green" class="white--text" fab medium right top>
                   <v-icon>shopping_cart</v-icon>
+                </v-btn> -->
+                <v-btn absolute color="red" class="white--text" fab small left top>
+                  <v-icon>mdi-basket-minus</v-icon>
                 </v-btn>
+                <v-btn absolute color="green" class="white--text" fab small right top>
+                  <v-icon>mdi-basket-plus</v-icon>
+                </v-btn>
+                <!-- <v-btn icon ripple>
+                  <v-icon color="error">mdi-basket-minus</v-icon>
+                </v-btn> -->
 
-                <div />
                 <h3 class="display-1 font-weight-light blue-grey--text mb-2">{{produto.nome}}</h3>
-
+                <v-divider />
                 <div class="font-weight-light mb-2">{{produto.descricao}}</div>
               </v-cart-text>
             </v-card>

@@ -68,6 +68,7 @@ import loginDialog from '~/components/login-dialog.vue'
 import Snacks from '~/helpers/Snacks.js'
 import api from '~api'
 import 'material-design-icons-iconfont/dist/material-design-icons.css'
+// import ContadorCarrinho from '~/components/cardapio.vue'
 
 export default {
   components: {

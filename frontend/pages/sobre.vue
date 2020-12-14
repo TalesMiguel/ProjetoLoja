@@ -43,7 +43,7 @@
           <v-icon class="mr-2">source</v-icon>
           <p class="mb-0">
             <strong>Página deste repositório no github</strong> <br>
-            <a :href="'https://github.com/TalesMiguel/ModeloLoja'"> Repositório </a>
+            <a :href="'https://github.com/TalesMiguel/ProjetoLoja'"> Repositório </a>
           </p>
         </v-layout>
       </v-container>

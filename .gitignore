@@ -5,6 +5,7 @@ coverage.xml
 htmlcov/
 .idea
 /jabuticaba.log
+ANOTACOES/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

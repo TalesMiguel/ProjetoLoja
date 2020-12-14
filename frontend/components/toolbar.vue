@@ -6,18 +6,20 @@
 
     <v-toolbar-item>
       <v-btn flat color="default" to="/cardapio">
-        Produtos
+        Cardápio
       </v-btn>
-      <v-btn flat color="default" to="/carrinho">
+      <v-btn v-if="logged_user" flat color="default" to="/carrinho">
         <v-badge left color="green">
-          <span slot="badge">3</span>
+          <span slot="badge">5</span> <!-- quebra esse span e faz igual ao debaixo pra incrementar o carrinho -->
           <v-icon>shopping_cart</v-icon>
           Meu carrinho
         </v-badge>
       </v-btn>
-      <v-btn flat color="default" to="/cesta">
+      <v-btn v-if="logged_user" flat color="default" to="/cesta">
         <v-badge left color="green">
-          <span slot="badge">3</span>
+          <span slot="badge">
+            <v-bind>5</v-bind>
+          </span>
           <v-icon>shopping_cart</v-icon>
           Minha cesta
         </v-badge>
@@ -68,6 +70,7 @@ import loginDialog from '~/components/login-dialog.vue'
 import Snacks from '~/helpers/Snacks.js'
 import api from '~api'
 import 'material-design-icons-iconfont/dist/material-design-icons.css'
+// import itens from '~/components/cesta.vue'
 // import ContadorCarrinho from '~/components/cardapio.vue'
 
 export default {

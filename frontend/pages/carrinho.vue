@@ -28,7 +28,7 @@
       <div class="my-4 subtitle-1">
         13 itens:
       </div>
-<!-- COLOCAR NO LUGAR DISSO O JSON HARD-CODED COM O CARRINHO" -->
+      <!-- COLOCAR NO LUGAR DISSO O JSON HARD-CODED COM O CARRINHO" -->
       <div>12 x R$ 02,50 Cerveja Scol Lata   </div>
       <div>01 x R$ 50,00 Cachaça Boazinha 1L </div>
 

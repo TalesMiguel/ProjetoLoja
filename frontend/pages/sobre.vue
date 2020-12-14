@@ -28,7 +28,7 @@
       </v-container>
 
       <v-container>
-        <h2 class="mb-3">Contato</h2>
+        <h2 class="mb-5">Contato</h2>
 
         <p class="mb-4">Algumas formas de entrar em contato comigo:</p>
 
@@ -63,11 +63,6 @@
   }
 }
 
-.history-bar {
-  width: 7px;
-  background-color: #eceff1;
-  flex-shrink: 0;
-}
 .history-description .title {
   position: relative;
 }
@@ -75,11 +70,11 @@
   content: "";
   position: absolute;
   background-color: #26547C;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   border-radius: 48px;
   left: -39px;
-  top: 2px;
+  top: 6px;
 }
 .history-last-text {
   position: relative;
